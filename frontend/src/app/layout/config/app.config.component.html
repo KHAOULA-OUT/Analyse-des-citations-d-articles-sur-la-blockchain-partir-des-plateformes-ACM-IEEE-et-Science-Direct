@@ -1,0 +1,12 @@
+<button class="layout-config-button p-link" type="button" (click)="onConfigButtonClick()">
+    <i class="pi pi-cog"></i>
+</button>
+
+<p-sidebar [(visible)]="visible" position="right" [transitionOptions]="'.3s cubic-bezier(0, 0, 0.2, 1)'" styleClass="layout-config-sidebar w-20rem">
+        <div>
+            <p>Switch to dark mode</p>
+            <button class="p-link w-2rem h-2rem" (click)="changeTheme('lara-dark-indigo', 'dark')">
+                <img src="assets/layout/images/themes/lara-dark-indigo.png" class="" alt="Lara Dark Indigo">
+            </button>
+        </div>
+</p-sidebar>
